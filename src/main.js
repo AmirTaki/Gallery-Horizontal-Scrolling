@@ -9,9 +9,11 @@ scrollContainer.addEventListener("wheel", (event)=>{
 })
 
 nextBtn.addEventListener('click', ()=> {
-        scrollContainer.scrollLeft += 900
+    scrollContainer.style.scrollBehavior = 'smooth'
+    scrollContainer.scrollLeft += 900
 })
 
 backBtn.addEventListener('click', ()=> {
-        scrollContainer.scrollLeft -= 900
+    scrollContainer.style.scrollBehavior = 'smooth'
+    scrollContainer.scrollLeft -= 900
 })
