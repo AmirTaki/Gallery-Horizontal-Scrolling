@@ -16,7 +16,7 @@ body{
 }
 
 .gallery div {
-    width: 100;
+    width: 100%;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap : 20px;
@@ -29,4 +29,11 @@ body{
 
 .gallery::-webkit-scrollbar {
     display: none;
+}
+
+.gallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
 }
