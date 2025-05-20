@@ -6,6 +6,12 @@ let nextBtn = document.getElementById('nextBtn')
 scrollContainer.addEventListener("wheel", (event)=>{
     event.preventDefault();
     scrollContainer.scrollLeft += event.deltaY
-    console.log(screenLeft)
-    console.log(event.deltaY)
+})
+
+nextBtn.addEventListener('click', ()=> {
+        scrollContainer.scrollLeft += 900
+})
+
+backBtn.addEventListener('click', ()=> {
+        scrollContainer.scrollLeft -= 900
 })
